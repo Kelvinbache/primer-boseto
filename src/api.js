@@ -1,5 +1,5 @@
 /*llamando a la contendor*/
-import {caja} from "./app.js";
+import {creadorElemento} from "./app.js";
 
 export async function api(buscardor) {
 
@@ -18,8 +18,10 @@ export async function api(buscardor) {
 
 /*estructurando forma visual*/
 function recorrer(perros){
-    caja.innerHTML += `<img src=${perros}> <br><br> <p>${perros}</p>`;
+  creadorElemento(perros);
 }
 
+/*cambiar foto  
+usar una condicion para ver sia una foto
 
-
+*/
