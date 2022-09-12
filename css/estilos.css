@@ -1,0 +1,22 @@
+body{
+  background-color: azure;
+}
+
+
+
+.fotos{
+  width: 350px;
+  position: relative;
+  top: 100px;
+  left: 450px;
+}
+
+input{
+  font-size: 18px;
+}
+
+.btn{
+  width: 30px;
+  height: 18px;
+}
+

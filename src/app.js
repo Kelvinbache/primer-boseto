@@ -17,11 +17,15 @@ function valor(e) {
 
 /*esto se encarga de crear nuevas imagenes */
 export function creadorElemento(perros) {
+  /********************agregando la imgen*****************************/
   const imagen = document.createElement("img");
   imagen.setAttribute("src", perros);
-  /********************agregando la imgen*****************************/
+  imagen.setAttribute("class","fotos")
+  /*********agregando link****************/
 
   caja.appendChild(imagen);
+
+  /*funtiones llamadas*/
   imagLInk(imagen);
   return cambio(imagen);
 }
@@ -39,9 +43,10 @@ export function borrar() {
 }
 
 /*funcion de cambio*/
-function cambio() {
-  if (caja.childNodes.length > 1) caja.childNodes[0].remove();
+function cambio(){
+  if (caja.childNodes.length > 1) caja.childNodes[0].remove(); 
 }
+
 
 /*cosas que falta poner 
 2) creador de links
